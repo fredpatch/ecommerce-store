@@ -3,7 +3,7 @@
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">ecommerce-store</h3>
+<h3 align="center">E-commerce-Store</h3>
 
 <div align="center">
 
@@ -34,7 +34,9 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Personal project for the purpose of learning a bit about Next.js.
+This is the 'Store' part completing the 'Admin' dashboard already active.
+That part of the store will give customer abilities to purchase and order items, also stripe capability for online payment and e-wallet.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -42,20 +44,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+Node version 14.x
+
+### Cloning the repository
 
 ```
-Give examples
+git clone https://github.com/fredpatch/ecommerce-store.git
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+Install packages
 
 ```
-Give the example
+npm i
 ```
 
 And repeat
