@@ -21,7 +21,7 @@
 I found it interesting to test new tech and with the many content I find on youtube, i am never out of ideas.
 I am also a big fan of the new gen coding language, and i am always looking for new tech to learn and test.
 
-    <br>
+    
 
 </p>
 
@@ -134,3 +134,4 @@ Add additional notes about how to deploy this on a live system.
 
 - Hat tip to anyone whose code was used
 - Code With Antonio (youtube Channel)
+- Future update: Add more function for more product diversity, description for product section to, implement a review section also ...
