@@ -3,7 +3,7 @@
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">E-commerce-Store</h3>
+<h3 align="center">Full Stack E-commerce + Dashboard Web Application</h3>
 
 <div align="center">
 
@@ -16,8 +16,13 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
-    <br> 
+<p align="center"> E-commerce personal project. The purpose of this short project was to get familiar with new gen coding language, and other dependable framework such as Clerk, or Prisma, and Next.js.
+
+I found it interesting to test new tech and with the many content I find on youtube, i am never out of ideas.
+I am also a big fan of the new gen coding language, and i am always looking for new tech to learn and test.
+
+    <br>
+
 </p>
 
 ## 📝 Table of Contents
@@ -34,83 +39,98 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Personal project for the purpose of learning a bit about Next.js.
-This is the 'Store' part completing the 'Admin' dashboard already active.
-That part of the store will give customer abilities to purchase and order items, also stripe capability for online payment and e-wallet.
+Main features that could be implemented:
+
+- Shadcn UI for the Admin!
+- Admin and API!
+- Possibility to control multiple vendors / stores through one Dashboard(For example you can have a "Shoe store" and a "Laptop store" and a "Suit store", and our CMS will generate API routes for all of those individually!)
+- create, update and delete categories!
+- create, update and delete products!
+- upload multiple images for products, and change them whenever you want!
+- create, update and delete filters such as "Color" and "Size", and then match them in the "Product" creation form.
+- create, update and delete "Billboards" which are these big texts on top of the page.
+- Search through all categories, products, sizes, colors, billboards with included pagination!
+- control which products are "featured" so they show on the homepage!
+- See your orders, sales, etc.
+- See graphs of your revenue etc.
+- Clerk Authentication!
+- Order creation
+- Stripe checkout
+- Stripe webhooks
+- Supabase + Prisma
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](https://ecommerce-store-ebon-gamma.vercel.app) for the project on a live system.
 
 ### Prerequisites
 
-Node version 14.x
+Node 14.x
 
-### Cloning the repository
+### Clone the repository
 
 ```
-git clone https://github.com/fredpatch/ecommerce-store.git
+https://github.com/fredpatch/ecommerce-store.git
 ```
 
-### Installing
-
-Install packages
+### Install packages
 
 ```
 npm i
 ```
 
-And repeat
+### Setup .env file
 
 ```
-until finished
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+
+# This was inserted by `prisma init`:
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+
+DATABASE_URL=''
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+STRIPE_API_KEY=
+FRONTEND_STORE_URL=http://localhost:3001
+STRIPE_WEBHOOK_SECRET=
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+### Connect to Supabase and Push Prisma
 
 ```
-Give an example
+npx prisma generate
+npx prisma db push
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+## 🔧 Start the app <a name = "tests"></a>
 
 ```
-Give an example
+npm run dev
 ```
 
-## 🎈 Usage <a name="usage"></a>
+## 🚀 Deployment <a name = "deployment">
 
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
+</a>
 
 Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
+- [Supabase](https://supabase.com) - Database
+- [Prisma](https://www.prisma.io) - Framework
+- [Transcript](https://www.typescriptlang.org) - Programming language
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+- [NextJs](https://nextjs.org) - Web Framework
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- References
+- Code With Antonio (youtube Channel)
